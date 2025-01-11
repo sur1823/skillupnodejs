@@ -1,9 +1,19 @@
-var http=require("http")
+var express=require('express')
+var bodyParser=require('body-parser')
+var mysql=require('mysql')
+var app=express()
+app.use(bodyParser())
 
-http.createServer(function(request,response){
-    var data=new Date();
-    response.end("Date is:"+data.toLocaleString());
-}).listen(8282,function(error){
-  if (error) throw error
-  console.log("Serer successfully started........")
+app.get("/",function(request,response){
+  response.send("hello from express js....")
 });
+
+
+app.get("/date",function(request,response){
+  response.send("Date is:.."+new Date().toLocaleString())
+});
+
+app.listen(9595,function(err){
+  if (err) throw err
+  console.log("Server started on port 9595, to shut down hit ctrl+c")
+})
