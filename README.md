@@ -4,6 +4,8 @@ It requires Express js, Body Parser, mysql dependancies.
 We can simply run index.js to get the application up and running.
 (Have not added package.json)
 
+Documentation file : SurajDuduskar_DevOps_NodeJs_Project.docx
+
 Flowchart : 
 
 <img width="451" height="1379" alt="image" src="https://github.com/user-attachments/assets/faa4526d-b915-479c-89a8-54050bc6301a" />
